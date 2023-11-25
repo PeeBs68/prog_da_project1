@@ -44,3 +44,28 @@ The dataframe now contains simulated values for graduate salary by grade, locati
 gov.ie
 HEA
 etc
+
+### Appendix
+
+#### List of Grades
+H1   
+H21   
+H22   
+H3   
+
+#### List of Employment Location
+Dublin   
+South-East   
+South-West   
+Midlands   
+Border   
+...
+
+#### List of Areas of Study/Course
+ICT - Information, Communication and Technology   
+Eng - Engineering...   
+HS - Human Sciences   
+HW - Health and Welfare   
+Agr - Agriculture...   
+Socs - Social Sciences   
+...
