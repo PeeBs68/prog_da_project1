@@ -6,7 +6,11 @@ Author: Phelim Barry
 The purpose of this readme is to outline the requirements for Project1 in Programming for Data Analysis and describe the methods I used to address it.
 
 ### Requirements
-(detail the requirements here)
+The purpose of this project is to create a data set by simulating a real world phenomon. Specifically:   
+* Choose a real world phenomon that can be measured and for which we could collect 100 data points across at least four different variables.
+* Investigate the types of variables involved, their likely distributions, and their relationships with each other.
+* Synthesise/simulate a data set as closely matching their properties as possible.
+* Display the newly created data set in an output cell within the notebook.
 
 
 ### Research Methods
