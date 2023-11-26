@@ -2,6 +2,22 @@ Readme for Project1 in Programming for Data Analysis
 
 Author: Phelim Barry
 
+# Table of Contents
+
+1. [Introduction](#Introduction)
+2. [Requirements](#Requirements)
+3. [Research Methods](#Research Methods)
+    1. [Salary](#salary)
+    2. [Grade](#grade)
+    3. [Area of Study](#Area of Study)
+    4. [Location](#location)
+    5. [Gender](#gender)
+4. [Simulation Methods](#Simulation Methods)
+5. [Results](#Results)
+6. [References](#References)
+7. [Appendix](#Appendix)
+
+
 ### Introduction
 The purpose of this readme is to outline the requirements for Project1 in Programming for Data Analysis and describe the methods I used to address it.
 
@@ -31,13 +47,13 @@ My research indicated to me that the most important factors affect a new graduat
 #### Variable2 - grade
 Starting with the variable grade, I was able to identify the overall split of grades achieved. I was also able to find the average salary by grade achieved.
 
-#### Variable2 - area of study
+#### Variable3 - area of study
 Similarily, I identified the numbers and percentages of students graduating from each course/area of study. And again I was able to find the average salary by area of study.
 
 #### Variable4 - location
 HEA provide details on the salary differences across the various regions in Ireland...
 
-#### Variable4 - gender
+#### Variable5 - gender
 Gender split is 45/55 female/male however males tend to eacn on average 1,500 more...
 
 #### Variable1 - salary
@@ -53,6 +69,8 @@ Using a newly created dataframe, I firstly create a colume of data with sample d
 For ```salary``` I firstly populate the dataframe using ```random.randint``` to produce a range of values which are normally distributed between the max and min salariy values identified earlier in my research. Given that these values are based on the population as a whole, I then apply individual weighting for each specific variable - ```grade```, ```location``` and ```course``` to produce the final dataframe.   
 
 The dataframe now contains simulated values for graduate salary by grade, location and course.
+
+### Results
 
 ### References
 $1$ https://www.gov.ie/en/publications/
