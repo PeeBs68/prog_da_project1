@@ -71,6 +71,7 @@ For ```salary``` I firstly populate the dataframe using ```random.randint``` to 
 The dataframe now contains simulated values for graduate salary by grade, location and course.
 
 ### Results
+In our results section we use a range of statistics and graphs to visualise the new data set. We also verify that the new data matches the characteristics of the original data.
 
 ### References
 $1$ https://www.gov.ie/en/publications/
