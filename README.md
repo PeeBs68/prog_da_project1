@@ -11,7 +11,7 @@ Author: Phelim Barry
     2. [Grade](#Grade)
     3. [Area of Study](#Area_of_Study)
     4. [Location](#Location)
-    5. [Gender](#gender)
+    5. [Gender](#Gender)
 4. [Simulation Methods](#Simulation_Methods)
 5. [Results](#Results)
 6. [References](#References)
@@ -34,12 +34,17 @@ The first thing to do was to decide on a real-world phenomonen for my project. A
 
 Graduate salaries tend to vary quite significantly and there is much researh and data available on this topic. Different sources tend to give different figures so finding trustworthy sources was an important aspect of my research. My primary sources of data to start to understand the phenonomen were gov.ie $^1$ and also the HEA $^2$. 
 
-My research indicated to me that the most important factors affect a new graduate salary were the grade achieved, the location of employment after graduation, the course/area of study and also the gender of the graduate. These were then the variables I considered for my project   
+My research indicated to me that the most important factors affect a new graduate salary were the grade achieved, the location of employment after graduation, the course/area of study and also the gender of the graduate. These were then the variables I considered for my project:
+
+| Variables| 
+| --- |
 | Salary |
 | Grade |
 | Location |
 | Course |
 | Gender |
+
+
 
 #### Salary
 From the HEA website I was able to find a lot of information regarding new graduate salaries in Ireland such as the average, the spread by area of study and details on the general distribution of salaries.
@@ -53,17 +58,19 @@ Similarily, I identified the numbers and percentages of students graduating from
 #### Location
 For details on the location variable, I was able to use the HEA as an initial source for my research. Using this and other sources I was able to find details on the salary differences across the various regions in Ireland.
 
-#### Variable5 - gender
-Gender split is 45/55 female/male however males tend to eacn on average 1,500 more...
+#### Gender
+The HEA also provided details on the Gender split in terms of both the number of students and the salary details after graduation.
 
 
 
 ### Simulation_Methods
-Using a newly created dataframe, I firstly create a colume of data with sample data for the ```location``` variable and base the distribution using the % split calculated earlier. Using similar methods I populate both the ```course``` and ```grade``` columns with appropriate distributions.   
+Using a newly created dataframe, I firstly create a column of data with sample data for the ```location``` variable and base the distribution using the % split calculated earlier. Using similar methods I populate both the ```course``` and ```grade``` columns with appropriate distributions.   
 
-For ```salary``` I firstly populate the dataframe using ```random.randint``` to produce a range of values which are normally distributed between the max and min salariy values identified earlier in my research. Given that these values are based on the population as a whole, I then apply individual weighting for each specific variable - ```grade```, ```location``` and ```course``` to produce the final dataframe.   
+For ```salary``` I firstly populate the dataframe using ```random.randint``` to produce a range of values which are distributed between the max and min salariy values for each course/area of study, identified earlier in my research. Given that these values are based on the population as a whole, I then apply individual weighting for each specific variable - ```grade```, ```location``` and ```course``` to produce the final dataframe.   
 
-The dataframe now contains simulated values for graduate salary by grade, location and course.
+The data set now contains simulated values for graduate salary by grade, location and course allowing us to see expected calaries for any range of criteria.
+
+Note: My initial approach was to simulate the salary variable with values to cover the full range of salaries regardless of course/area of study but this produced inaccurate results. So I refined the approach and generated the salary variable using salary ranges per course/area of study instead.
 
 ### Results
 In our results section we use a range of statistics and graphs to visualise the new data set. We also verify that the new data matches the characteristics of the original data.
