@@ -76,7 +76,7 @@ Note: My initial approach was to simulate the salary variable with values to cov
 In our results section we use a range of statistics and graphs to visualise the new data set. We also verify that the new data matches the characteristics of the original data.
 
 ### References
-$1$ https://www.gov.ie/en/publications/
+$1$ https://www.gov.ie/en/publications/   
 $2$ https://hea.ie/
 
 ### Appendix
@@ -90,11 +90,11 @@ H3
 #### List of Employment Location
 Dublin     
 South-West   
-Mid-West
-Mid-East
-Midlands
-South-East
-West
+Mid-West   
+Mid-East   
+Midlands   
+South-East   
+West   
 Border   
 
 #### List of Areas of Study/Course
