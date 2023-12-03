@@ -32,9 +32,9 @@ The purpose of this project is to create a data set by simulating a real world p
 ### Research_Methods
 The first thing to do was to decide on a real-world phenomonen for my project. After much thinking I finally decided to base my project on the subject of new graduate salaries in Ireland. This topic as it is of interest to me as I have two children who recently graduated college and have both started working - albeit in completely different industries.
 
-Graduate salaries tend to vary quite significantly and there is much researh and data available on this topic. Different sources tend to give different figures so finding trustworthy sources was an important aspect of my research. My primary sources of data to start to understand the phenonomen were gov.ie $^1$ and also the HEA $^2$. 
+Graduate salaries tend to vary quite significantly and there is much research and data available on this topic. Different sources tend to give different figures so finding trustworthy sources was an important aspect of my research. My primary sources of data to start to understand the phenonomen were gov.ie $^1$ and also the HEA $^2$. 
 
-My research indicated to me that the most important factors affect a new graduate salary were the grade achieved, the location of employment after graduation, the course/area of study and also the gender of the graduate. These were then the variables I considered for my project:
+My research indicated to me that the most important factors affecting a new graduate salary were the grade achieved, the location of employment after graduation, the course/area of study and also the gender of the graduate. These were then the variables I considered for my project:
 
 | Variables| 
 | --- |
@@ -64,13 +64,13 @@ The HEA also provided details on the Gender split in terms of both the number of
 
 
 ### Simulation_Methods
-Using a newly created dataframe, I firstly create a column of data with sample data for the ```location``` variable and base the distribution using the % split calculated earlier. Using similar methods I populate both the ```course``` and ```grade``` columns with appropriate distributions.   
+To simulate the data I begin by creating a list of areas of study/courses and with a for loop I cycle through that list and create individual dataframes for each one. I populate each of these dataframes with random sample data for the ```location``` variable and base the distribution using the % split calculated earlier. Next, using similar methods I populate the ```course```, ```grade``` and ```gender``` columns with appropriate distributions of data identidied earlier.   
 
-For ```salary``` I firstly populate the dataframe using ```random.randint``` to produce a range of values which are distributed between the max and min salariy values for each course/area of study, identified earlier in my research. Given that these values are based on the population as a whole, I then apply individual weighting for each specific variable - ```grade```, ```location``` and ```course``` to produce the final dataframe.   
+For ```salary``` I firstly populate each dataframe using ```random.randint``` to produce a range of values which are distributed between the max and min salariy values for each course/area of study  identified earlier in my research. Given that these values are based on the population as a whole, I then apply individual weighting for each specific variable - ```grade```, ```location``` and ```gender``` to produce the final dataframes. I combine the dataframes into one using ```pd.concat```.
 
-The data set now contains simulated values for graduate salary by grade, location and course allowing us to see expected calaries for any range of criteria.
+The data set now contains simulated values for graduate salary by grade, location course and gender allowing us to see expected salaries for any range of criteria.
 
-Note: My initial approach was to simulate the salary variable with values to cover the full range of salaries regardless of course/area of study but this produced inaccurate results. So I refined the approach and generated the salary variable using salary ranges per course/area of study instead.
+Note: My initial approach was to simulate the salary variable with values to cover the full range of salaries regardless of course/area of study but this produced inaccurate results. So I refined the approach and generated the salary variable using salary ranges per course/area of study instead - hence the use of multiple dataframes.
 
 ### Results
 In our results section we use a range of statistics and graphs to visualise the new data set. We also verify that the new data matches the characteristics of the original data.
