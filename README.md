@@ -7,15 +7,11 @@ Author: Phelim Barry
 1. [Introduction](#Introduction)
 2. [Requirements](#Requirements)
 3. [Research Methods](#Research_Methods)
-    1. [Salary](#Salary)
-    2. [Grade](#Grade)
-    3. [Area of Study](#Area_of_Study)
-    4. [Location](#Location)
-    5. [Gender](#Gender)
-4. [Simulation Methods](#Simulation_Methods)
-5. [Results](#Results)
-6. [References](#References)
-7. [Appendix](#Appendix)
+4. [Variables](#Variables)
+5. [Simulation Methods](#Simulation_Methods)
+6. [Results](#Results)
+7. [References](#References)
+8. [Appendix](#Appendix)
 
 
 ### Introduction
@@ -36,7 +32,9 @@ Graduate salaries tend to vary quite significantly and there is much research an
 
 My research indicated to me that the most important factors affecting a new graduate salary were the grade achieved, the location of employment after graduation, the course/area of study and also the gender of the graduate. These were then the variables I considered for my project:
 
-| Variables| 
+### Variables
+
+|   |
 | --- |
 | Salary |
 | Grade |
@@ -44,24 +42,7 @@ My research indicated to me that the most important factors affecting a new grad
 | Course |
 | Gender |
 
-
-
-#### Salary
-From the HEA website I was able to find a lot of information regarding new graduate salaries in Ireland such as the average, the spread by area of study and details on the general distribution of salaries.
-
-#### Grade
-Again using data from the HEA and CSO I was able to find out details on how the grade affects the salary. I was able to identify the overall split of grades achieved as well as the average salary by grade achieved.
-
-#### Area_of_Study
-Similarily, I identified the numbers and percentages of students graduating from each course/area of study. And again I was able to find the average salary by area of study.
-
-#### Location
-For details on the location variable, I was able to use the HEA as an initial source for my research. Using this and other sources I was able to find details on the salary differences across the various regions in Ireland.
-
-#### Gender
-The HEA also provided details on the Gender split in terms of both the number of students and the salary details after graduation.
-
-
+The majority of my research into the variables was done using information provided by the HEA, CSO $^3$ and also gov.ie. I was able to find a lot of information regarding new graduate salaries in Ireland such as the average, the spread by area of study and details on the general distribution of salaries. I was able to identify the overall split of grades achieved as well as the average salary by grade achieved. Similarily, I was able to identify the numbers and percentages of students graduating from each course/area of study. And again I was able to find the average salary by area of study. Using the HEA and other sources I was able to get details on the salary differences across the various regions in Ireland. The HEA also provided details on the Gender split in terms of both the number of students and the salary details after graduation.
 
 ### Simulation_Methods
 To simulate the data I begin by creating a list of areas of study/courses and with a for loop I cycle through that list and create individual dataframes for each one. I populate each of these dataframes with random sample data for the ```location``` variable and base the distribution using the % split calculated earlier. Next, using similar methods I populate the ```course```, ```grade``` and ```gender``` columns with appropriate distributions of data identidied earlier.   
@@ -77,7 +58,8 @@ In our results section we use a range of statistics and graphs to visualise the 
 
 ### References
 $1$ https://www.gov.ie/en/publications/   
-$2$ https://hea.ie/
+$2$ https://hea.ie/   
+$3$ https://www.cso.ie/en/index.html
 
 ### Appendix
 
