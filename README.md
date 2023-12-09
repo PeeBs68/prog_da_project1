@@ -1,6 +1,16 @@
 Readme for Project1 in Programming for Data Analysis
-
+***
 Author: Phelim Barry
+
+The contents of this repository are available at https://github.com/PeeBs68/prog_da_project1
+
+To execute the code the following applications are suggested:   
+Anaconda Navigator v2.4.2   
+Python v3.11.4   
+VS Code: v1.82.2   
+Jupyter Notebook: v6.5.4
+
+***
 
 # Table of Contents
 
